@@ -1,0 +1,185 @@
+﻿IMPLEMENTATION
+    logic_i
+REFINES
+    logic
+SEES
+    g_types ,
+    g_operators ,
+    io_constants ,
+    lchip_interface ,
+    user_ctx ,
+    inputs
+
+    // pragma SAFETY_VARS
+CONCRETE_VARIABLES
+    board_0_O1 ,
+    board_0_O2 ,
+    ctime , //Current time
+    l1d , //This and the two following variables hold the last time that any of the lights were turned green or stopped being green
+    l2d ,
+    l3d ,
+    l1s , //This and the two following variables hold the last known value for each input.
+    l2s ,
+    l3s ,
+    relayTime //Time the checkAbnormalBehavior was last called
+INVARIANT
+    board_0_O1 : uint8_t &
+    board_0_O2 : uint8_t &
+    ctime : uint32_t &
+    l1d : uint32_t &
+    l2d : uint32_t &
+    l3d : uint32_t &
+    l1s : uint8_t &
+    l2s : uint8_t &
+    l3s : uint8_t &
+    relayTime : uint32_t
+
+
+INITIALISATION
+    board_0_O1 := IO_OFF ;
+    board_0_O2 := IO_OFF ;
+    ctime := 0 ;
+    l1d := 0 ;
+    l2d := 0 ;
+    l3d := 0 ;
+    l1s := IO_OFF ;
+    l2s := IO_OFF ;
+    l3s := IO_OFF ;
+    relayTime := 51
+
+LOCAL_OPERATIONS
+    r1 , r2 <-- supervisor ( i1 , i2 , i3 ) =
+    PRE
+        r1 : uint8_t & r2 : uint8_t & i1 : uint8_t & i2 : uint8_t & i3 : uint8_t & board_0_O1 : uint8_t & board_0_O2 : uint8_t & ctime : uint32_t & l1d : uint32_t & l2d : uint32_t & l3d : uint32_t & l1s : uint8_t & l2s : uint8_t & l3s : uint8_t & relayTime : uint32_t
+    THEN
+        r1 :: uint8_t ||
+        r2 :: uint8_t
+    END ;
+    result <-- allLightsGreen ( i1 , i2 , i3 ) =
+    PRE
+        result : uint8_t & i1 : uint8_t & i2 : uint8_t & i3 : uint8_t & board_0_O1 : uint8_t
+    THEN
+        IF ( i1 = IO_ON ) THEN
+            IF ( i2 = IO_ON ) THEN
+                IF ( i3 = IO_ON ) THEN
+                    result := IO_ON
+                    ELSE result := board_0_O1
+                END
+                ELSE result := board_0_O1
+            END
+            ELSE result := board_0_O1
+        END
+    END ;
+    result <-- checkAbnormalBehavior ( i1 , i2 , i3 ) =
+    PRE
+        result : uint8_t & i1 : uint8_t & i2 : uint8_t & i3 : uint8_t & ctime : uint32_t & l1d : uint32_t & l2d : uint32_t & l3d : uint32_t & l1s : uint8_t & l2s : uint8_t & l3s : uint8_t & relayTime : uint32_t
+    THEN
+        result :: uint8_t ||
+        l1d :: uint32_t ||
+        l2d :: uint32_t ||
+        l3d :: uint32_t ||
+        l1s :: uint8_t ||
+        l2s :: uint8_t ||
+        l3s :: uint8_t ||
+        relayTime :: uint32_t
+    END
+
+OPERATIONS
+    user_logic =
+    BEGIN
+        ctime <-- get_ms_tick ;
+        VAR i1_ , i2_ , i3_ IN
+            i1_ : ( i1_ : uint8_t ) ;
+            i2_ : ( i2_ : uint8_t ) ;
+            i3_ : ( i3_ : uint8_t ) ;
+
+            i1_ <-- get_board_0_I1 ;
+            i2_ <-- get_board_0_I2 ;
+            i3_ <-- get_board_0_I3 ;
+            board_0_O1 , board_0_O2 <-- supervisor ( i1_ , i2_ , i3_ )
+        END
+    END ;
+
+    r1 , r2 <-- supervisor ( i1 , i2 , i3 ) =
+    BEGIN
+        r1 <-- allLightsGreen ( i1 , i2 , i3 ) ;
+        VAR dslc IN //dslc = difference since last call to checkAbnormalBehavior
+            dslc : ( dslc : uint32_t ) ;
+            dslc := sub_uint32 ( ctime , relayTime ) ;
+            IF ( board_0_O2 = IO_ON ) THEN
+                IF ( dslc < 1000 ) THEN
+                    r2 := board_0_O2
+                ELSE
+                    r2 <-- checkAbnormalBehavior ( i1 , i2 , i3 )
+                END
+            ELSE
+                r2 <-- checkAbnormalBehavior ( i1 , i2 , i3 )
+            END
+        END
+    END ;
+
+    result <-- allLightsGreen ( i1 , i2 , i3 ) = //returns IO_ON if all lights are on or if it has returned IO_ON previously
+    BEGIN
+        result := board_0_O1 ;
+        IF ( i1 = IO_ON ) THEN
+            IF ( i2 = IO_ON ) THEN
+                IF ( i3 = IO_ON ) THEN
+                    result := IO_ON
+                END
+            END
+        END
+    END ;
+
+    result <-- checkAbnormalBehavior ( i1 , i2 , i3 ) = //returns IO_ON if an abnormal behavior is detected
+    BEGIN
+        result := IO_OFF ;
+        VAR d1 , d2 , d3 IN //deltas between the ctime and l1d,l2d,l3d
+            d1 : ( d1 : uint32_t ) ;
+            d2 : ( d2 : uint32_t ) ;
+            d3 : ( d3 : uint32_t ) ;
+            d1 := sub_uint32 ( ctime , l1d ) ;
+            d2 := sub_uint32 ( ctime , l2d ) ;
+            d3 := sub_uint32 ( ctime , l3d ) ;
+            IF ( i1 = l1s ) THEN
+                skip
+            ELSE
+                l1s := i1 ;
+                l1d := ctime ;
+                IF ( d1 < MINCT ) THEN
+                    result := IO_ON ;
+                    relayTime := ctime
+                END
+            END ;
+            IF ( i2 = l2s ) THEN
+                skip
+            ELSE
+                l2s := i2 ;
+                l2d := ctime ;
+                IF ( d2 < MINCT ) THEN
+                    result := IO_ON ;
+                    relayTime := ctime
+                END
+            END ;
+            IF ( i3 = l3s ) THEN
+                skip
+            ELSE
+                l3s := i3 ;
+                l3d := ctime ;
+                IF ( d3 < MINCT ) THEN
+                    result := IO_ON ;
+                    relayTime := ctime
+                END
+            END
+        END
+    END ;
+
+    po <-- get_board_0_O1 =
+    BEGIN
+        po := board_0_O1
+    END ;
+
+    po <-- get_board_0_O2 =
+    BEGIN
+        po := board_0_O2
+    END
+END

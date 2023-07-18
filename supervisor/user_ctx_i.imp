@@ -1,0 +1,12 @@
+IMPLEMENTATION
+    user_ctx_i
+REFINES
+    user_ctx
+
+    // pragma CONSTANTS
+SEES
+    g_types
+VALUES
+    MINCT = 5000; // 5 seconds
+    MINRY = 51 //51 milliseconds, this exists because if the lights flicker too quickly it could kill the board
+END

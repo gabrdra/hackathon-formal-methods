@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\expand_src" old_decomp_dir="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\src">
+        <!-- Definition directory list -->
+        <!-- Component file list -->
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="g_operators" suffix="mch" user="joaog">
+            <component name="g_operators" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="g_standard_types" suffix="mch" user="joaog">
+            <component name="g_standard_types" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="g_types" suffix="mch" user="joaog">
+            <component name="g_types" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="g_types_i" suffix="imp" user="joaog">
+            <component name="g_types_i" type="implementation" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="inputs" suffix="mch" user="joaog">
+            <component name="inputs" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="inputs_i" suffix="imp" user="joaog">
+            <component name="inputs_i" type="implementation" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="io_constants" suffix="mch" user="joaog">
+            <component name="io_constants" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="lchip_configuration" suffix="mch" user="joaog">
+            <component name="lchip_configuration" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="lchip_interface" suffix="mch" user="joaog">
+            <component name="lchip_interface" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="logic" suffix="mch" user="joaog">
+            <component name="logic" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="logic_i" suffix="imp" user="joaog">
+            <component name="logic_i" type="implementation" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="outputs" suffix="mch" user="joaog">
+            <component name="outputs" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="outputs_i" suffix="imp" user="joaog">
+            <component name="outputs_i" type="implementation" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="safety_variables" suffix="mch" user="joaog">
+            <component name="safety_variables" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="user_component" suffix="mch" user="joaog">
+            <component name="user_component" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="user_component_i" suffix="imp" user="joaog">
+            <component name="user_component_i" type="implementation" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="user_configuration" suffix="mch" user="joaog">
+            <component name="user_configuration" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="user_configuration_i" suffix="imp" user="joaog">
+            <component name="user_configuration_i" type="implementation" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="user_ctx" suffix="mch" user="joaog">
+            <component name="user_ctx" type="specification" />
+        </component_file>
+        <component_file path="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor" name="user_ctx_i" suffix="imp" user="joaog">
+            <component name="user_ctx_i" type="implementation" />
+        </component_file>
+    </project>
+</db_xml>

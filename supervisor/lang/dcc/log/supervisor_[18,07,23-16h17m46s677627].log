@@ -1,0 +1,216 @@
+---------------------------------------
+ DCC v0.0, ClearSy 2017
+
+ Configuration from user arguments
+---------------------------------------
+step                   | b2c
+release_mode           | ReleaseMode.SAFETY
+platform               | win32
+install_dir            | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win
+build_dir              | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\lang\dcc
+compile_mode           | CompilationMode.USER
+ending_mode            | EndingMode.LCHIP
+debug_mode             | False
+lite_mode              | False
+project_name           | supervisor
+build_project_dir      | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\lang\dcc\supervisor
+kernel_archive         | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\extensions\lchip_795L_multi_kernel_kernel_archive.zip
+tools_dir              | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win
+tools_cfg              | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools.cfg
+config_dir             | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\extensions\lchip_user_src\cfg
+resources_dir          | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\extensions\lchip_user_src\resources
+c_src_dir              | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\extensions\lchip_user_src\src
+b_bdp_dir              | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp
+b_db                   | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\supervisor.db
+parrallel_build_tasks  | 1
+compiler               | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe
+read_elf               | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-readelf.exe
+bin2hex                | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-bin2hex.exe
+c_compiler_options     | False
+use_bootloader         | False
+generate_mips_assembly | False
+Output hex file        | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\lang\dcc\supervisor\supervisor_final.hex
+
+ Configuration tools configuration file
+---------------------------------------
+bxml                  | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\bxml.exe
+c4b                   | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\b2c.exe
+concateneur           | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\Concateneur_non_gui.exe
+checksummer_debarque  | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\ChecksummerDebarque.exe
+checksummer_total     | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\CheckSummerTotalNonGui.exe
+mapping_b32_gen       | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\mapping_b32_gen.exe
+link_to_replicas_gen  | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\link_to_replicas_gen.exe
+info_memory_usage     | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\info_memory_usage.exe
+include_constants_gen | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\include_constants_gen.exe
+model_data_group_gen  | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\model_data_group_gen.exe
+pic32ubl              | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\LCHIP_uploader.exe
+
+ Configuration project configuration file
+---------------------------------------
+COMPILATION_MODE                | USER
+ENDING_MODE                     | LCHIP
+MCU                             | 32MX795F512L
+INCLUDE_CONSTANTS_PATH          | replica_2\include_constants.h
+C4B_OUTPUT_PATH                 | replica_2
+LINKER_SCRIPT                   | LinkerScript.ld
+PROGRAM_MEM                     | ORIGIN = 0x9D000000, LENGTH = 0x80000
+PROGRAM_DATA                    | ORIGIN = 0xA0000000, LENGTH = 0x20000
+BOOTLOADER_AREA                 | ORIGIN = 0x1FC00000, LENGTH = 0x3000
+[_SYSTEM_RESERVED_FLASH_LENGTH] | 0x15000
+[_SYSTEM_RESERVED_RAM_LENGTH]   | 0x8000
+[_PRECOMPUTED_CRC_SPACE]        | 0x1000
+[_PRECOMPUTED_CRC_LENGTH]       | 0x1000
+C_COMPILER                      | pic32
+C_COMPILER_OPT                  | -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING
+R1_CHK_VAR_SECTION              | .R1_CHK_VAR
+R1_NCHK_VAR_SECTION             | .R1_NCHK_VAR
+R1_FN_SECTION                   | .R1_FN
+SYMBOL_REGEX                    | ^safety_variables__initialisation$
+STRUCT_GLOBAL_CONSTANTS         | global_constants
+STRUCT_SAFETY_VARIABLES_SIZE    | struct_safety_variables_size_minus_1
+STRUCT_SAFETY_VARIABLES_ARRAY   | safety_variables_array
+LINK_TO_KERNEL_REGEX            | ^.*$
+LINK_TO_KERNEL_ADDR_PATH        | kernel_app\link_to_kernel_addr.h
+NON_APP_SECTION_REGEX           | ^\.(USER_INFO|TEST_FLASH|SAFETY_SPACE_CRC|CRC|NR_NS_FN_NO_CACHE|R[12]?_U_\w+)$
+FREE_FLASH_SECTION              | .FREE_FLASH_SPACE
+FREE_RAM_SECTION                | .FREE_RAM_SPACE
+
+
+
+ ------------------------------- 
+|     I - First C toolchain     |
+ ------------------------------- 
+
+1.1) C toolchain initialization
+-----------------------------------
+src_dir : D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources
+build_dir : D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build
+release_dir : D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\release
+linker_script_origin_path : D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\extensions\lchip_user_src\src\LinkerScript.ld
+linker_script_path : D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\LinkerScript.ld
+c4b_output_dir_path : D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2
+
+1.2) C sources generation
+-----------------------------
+Copying C NR sources
+Removing wrong linkerscripts
+
+1.3) INCLUDE_CONSTANTS_GEN
+------------------------------
+Launch [Include constants gen] : ['D:\\CSSP_for_education_20230522\\CSSP\\Atelier_B_cssp_4.6.0-rc7\\dcc_package_win\\tools_win\\bin\\include_constants_gen.exe', 'D:\\CSSP_for_education_20230522\\CSSP\\CSSP_WORKSPACE\\supervisor\\bdp\\..\\\\lang\\dcc\\supervisor\\cfg\\model_data_group.cfg', 'D:\\CSSP_for_education_20230522\\CSSP\\CSSP_WORKSPACE\\supervisor\\bdp\\..\\\\lang\\dcc\\supervisor\\c_toolchain_1\\sources\\replica_2\\include_constants.h']
+
+1.4) C4B
+------------
+Launch [C4B] : D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\bin\b2c.exe -C "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2" -p PIC -D "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\bdp\supervisor.db" -M "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\cfg\model_data_group.cfg" -r "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\bdp\AtelierB" g_types_i.imp user_configuration_i.imp user_ctx_i.imp inputs_i.imp logic_i.imp user_component_i.imp outputs_i.imp
+WARNING : Can't find any %no_checked_data machine in mapping D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\cfg\model_data_group.cfg
+WARNING : Can't find any %pic_registers machine in mapping D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\cfg\model_data_group.cfg
+Loading component g_types_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/g_types_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/g_types.h
+Loading component user_configuration_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/user_configuration_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/user_configuration.h
+Loading component user_ctx_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/user_ctx_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/user_ctx.h
+Loading component inputs_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/inputs_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/inputs.h
+Loading component logic_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/logic_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/logic.h
+Loading component user_component_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/user_component_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/user_component.h
+Loading component outputs_i.imp
+Writing source file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/outputs_i.c
+Writing header file D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2/outputs.h
+
+1.5) Update Linker_Script
+-----------------------------
+Linker edit map :
+[_SYSTEM_RESERVED_FLASH_LENGTH]                  | 0x15000
+[_SYSTEM_RESERVED_RAM_LENGTH]                    | 0x8000
+[_PRECOMPUTED_CRC_SPACE]                         | 0x1000
+[_PRECOMPUTED_CRC_LENGTH]                        | 0x1000
+[_APP_PROGRAM_MEM_ORIGIN]                        | 0x9d019444
+[_APP_PROGRAM_MEM_LENGTH]                        | 412604
+[_APP_DATA_MEM_ORIGIN]                           | 0xa00083c4
+[_APP_DATA_MEM_LENGTH]                           | 97340
+[&g_operators__initialisation]                   | 0x9d01043c
+[&g_standard_types__initialisation]              | 0x9d01045c
+[&IO_ON]                                         | 0x9d011f13
+[&IO_OFF]                                        | 0x9d011f14
+[&user_struct_safety_variables_size_minus_1]     | 0x9d011f28
+[&ru_c__module_secu_ids_ptr]                     | 0x9d011f2c
+[&ru_c__module_nb_inputs_ptr]                    | 0x9d011f30
+[&ru_c__module_nb_outputs_ptr]                   | 0x9d011f34
+[&ru_c__input_module_ids_ptr]                    | 0x9d011f38
+[&ru_c__input_local_ids_ptr]                     | 0x9d011f3c
+[&ru_c__output_module_ids_ptr]                   | 0x9d011f40
+[&ru_c__output_local_ids_ptr]                    | 0x9d011f44
+[&ru_c__NB_MODULES_ptr]                          | 0x9d011f48
+[&ru_c__NB_INPUTS_ptr]                           | 0x9d011f4c
+[&ru_c__NB_OUTPUTS_ptr]                          | 0x9d011f50
+[&r2__user_configuration__initialisation_ptr]    | 0x9d011f6c
+[&r2__user_safety_variables__initialisation_ptr] | 0x9d011f70
+[&r2__user_safety_variables_array_ptr]           | 0x9d011f74
+[&r2__user_component__initialisation_ptr]        | 0x9d011f78
+[&r2__user_app_ptr]                              | 0x9d011f7c
+[&r2__user_consistency_error_detection_test_ptr] | 0x9d011f80
+[&io_constants__initialisation]                  | 0x9d013680
+[&print_global_inputs]                           | 0x9d0138f4
+[&get_ms_tick]                                   | 0x9d013980
+[&get_processor_id]                              | 0x9d0139b8
+[&get_replica_id]                                | 0x9d0139e8
+[&read_global_input]                             | 0x9d013a18
+[&write_global_output]                           | 0x9d013a60
+[&print_uint8]                                   | 0x9d013ab0
+[_R1_FN_ADJUST]                                  | 0x0
+LinkerScript updated
+
+1.6) Generate link_to_kernel_addr.h
+---------------------------------------
+link_to_kernel_addr_path : D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\kernel_app\link_to_kernel_addr.h
+selection_regex : ^.*$
+Done
+
+1.7) C compilation
+----------------------
+make            | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\make\mingw32-make.exe
+picFlag         | -mprocessor=32MX795F512L
+compiler_path   | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe
+bin2hex_path    | D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-bin2hex.exe
+linkerScript    | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\LinkerScript.ld
+project         | c_toolchain_1
+sources         | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources
+build           | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build
+release         | D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\release
+parallel_build  | 1
+compiler_opt    | -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING
+no_startup_code | True
+
+Launch [c2hex] : ['D:\\CSSP_for_education_20230522\\CSSP\\Atelier_B_cssp_4.6.0-rc7\\dcc_package_win\\tools_win\\c2hex\\make\\mingw32-make.exe', '-f', 'D:\\CSSP_for_education_20230522\\CSSP\\CSSP_WORKSPACE\\supervisor\\bdp\\..\\\\lang\\dcc\\supervisor\\c_toolchain_1\\sources\\makefile', '-j1']
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\kernel_app\link_to_kernel.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o"
+[err] D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\kernel_app\link_to_kernel.c:24:95: warning: initialization discards 'const volatile' qualifier from pointer target type [enabled by default]
+[err]  void* volatile const __attribute__ ((section (".ru_s_cst__NB_MODULES"))) r2__NB_MODULES_ptr = &(global_constants.co_NB_MODULES);
+[err]                                                                                                ^
+[err] D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\kernel_app\link_to_kernel.c:25:93: warning: initialization discards 'const volatile' qualifier from pointer target type [enabled by default]
+[err]  void* volatile const __attribute__ ((section (".ru_s_cst__NB_INPUTS"))) r2__NB_INPUTS_ptr = &(global_constants.co_NB_INPUTS);
+[err]                                                                                              ^
+[err] D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\kernel_app\link_to_kernel.c:26:95: warning: initialization discards 'const volatile' qualifier from pointer target type [enabled by default]
+[err]  void* volatile const __attribute__ ((section (".ru_s_cst__NB_OUTPUTS"))) r2__NB_OUTPUTS_ptr = &(global_constants.co_NB_OUTPUTS);
+[err]                                                                                                ^
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\non_replicated\safety_variables.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\c4b_constants.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\c4b_no_checked_variables.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\c4b_safety_variables.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\g_types_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\inputs_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\logic_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\outputs_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\user_component_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\user_configuration_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -D _DISABLE_OPENADC10_CONFIGPORT_WARNING -D _SUPPRESS_PLIB_WARNING -O0 -g -x c -mprocessor=32MX795F512L -MMD -c "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\replica_2\user_ctx_i.c" -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-gcc.exe" -mprocessor=32MX795F512L -nostartfiles -o "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\release/c_toolchain_1.elf" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o" "-Wl,--defsym=__MPLAB_BUILD=1,--defsym=_min_heap_size=0,--script=D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\sources\LinkerScript.ld,-Map=D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\release/c_toolchain_1.map"
+"D:\CSSP_for_education_20230522\CSSP\Atelier_B_cssp_4.6.0-rc7\dcc_package_win\tools_win\c2hex\pic32-tools\bin\pic32-bin2hex.exe" "D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\release/c_toolchain_1.elf"

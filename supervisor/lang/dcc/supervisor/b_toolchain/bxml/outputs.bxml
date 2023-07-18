@@ -1,0 +1,21 @@
+<Machine name='outputs' type='abstraction'>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<Operations>
+<Operation name='write_outputs'>
+<Attr>
+<Pos l='6' c='5' s='13'/>
+</Attr>
+<Body>
+<Skip>
+<Attr>
+<Pos l='6' c='21' s='4'/>
+</Attr>
+</Skip>
+</Body>
+</Operation>
+</Operations>
+<TypeInfos/>
+
+</Machine>

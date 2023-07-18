@@ -1,0 +1,11 @@
+IMPLEMENTATION CTXtf2_i
+REFINES CTXtf2
+
+VALUES
+     TRANSITIONS = {
+        S1 |-> (L3 |-> L1),
+        S2 |-> (L2 |-> L3),
+        S3 |-> (L1 |-> L2),
+        S3 |-> (L1 |-> L3)
+    }
+ END

@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
+<Define hash="920242389" name="B definitions">
+<Exp_Comparison op="=">
+<Id typref="0" value="NAT"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" value="0"/>
+<Id typref="1" value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" value="INT"/>
+<Binary_Exp typref="0" op="..">
+<Id typref="1" value="MININT"/>
+<Id typref="1" value="MAXINT"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define hash="555758997" name="ctx">
+<Exp_Comparison op="=">
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:1:1" value="uint32_t"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:1:2:1" value="0"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:1:2:2" value="4294967295"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:2:1" value="uint16_t"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:2:2:1" value="0"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:2:2:2" value="65535"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:3:1" value="uint8_t"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:3:2:1" value="0"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:3:2:2" value="255"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:4:1" value="STRUE"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:4:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:5:1" value="SFALSE"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:5:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:6:1" value="MAX_UINT32"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:6:2" value="uint32_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:7:1" value="MAX_UINT16"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:7:2" value="uint16_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:8:1" value="MAX_UINT8"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:8:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:9:1" value="STRUE"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:9:2:1" value="0"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:9:2:2" value="MAX_UINT8"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:10:1" value="SFALSE"/>
+<Binary_Exp typref="0" op="..">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:10:2:1" value="0"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:10:2:2" value="MAX_UINT8"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:11:1" value="STRUE"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:11:2" value="SFALSE"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:12:1" value="SBOOL"/>
+<Nary_Exp typref="0" op="{">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:12:2:1" value="STRUE"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:12:2:2" value="SFALSE"/>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:13:1" value="STRUE"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:13:2" value="2"/>
+</Exp_Comparison>
+<Exp_Comparison op="&lt;=i">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:14:1" value="SFALSE"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:14:2" value="2"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:15:1" value="MAX_UINT32"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:15:2" value="4294967295"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:16:1" value="MAX_UINT16"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:16:2" value="65535"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:17:1" value="MAX_UINT8"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:17:2" value="255"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="2" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:18:1" value="Convert_Bool"/>
+<Nary_Exp typref="2" op="{">
+<Binary_Exp typref="3" op="|->">
+<Boolean_Literal typref="4" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:18:2:1:1" value="TRUE"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:18:2:1:2" value="STRUE"/>
+</Binary_Exp>
+<Binary_Exp typref="3" op="|->">
+<Boolean_Literal typref="4" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:18:2:2:1" value="FALSE"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:3:1:18:2:2:2" value="SFALSE"/>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:1:1" value="TIME"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:1:2" value="uint32_t"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:2:1" value="IO_STATE"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:2:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:3:1" value="IO_ON"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:3:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:4:1" value="IO_OFF"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:4:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:5:1" value="IO_ON"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:5:2" value="IO_OFF"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:6:1" value="IO_ON"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:6:2" value="IO_STATE"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:7:1" value="IO_OFF"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\io_constants.bxml:1:4:1:7:2" value="IO_STATE"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:1:1" value="MAX_NB_MODULES"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:1:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:2:1" value="MAX_NB_INPUTS"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:2:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:3:1" value="MAX_NB_OUTPUTS"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:3:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:4:1" value="MAX_NB_MODULES"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:4:2" value="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:5:1" value="MAX_NB_INPUTS"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:5:2" value="3"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:6:1" value="MAX_NB_OUTPUTS"/>
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_configuration.bxml:1:3:1:6:2" value="2"/>
+</Exp_Comparison>
+</Define>
+<Define hash="1105990695" name="seext">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:3:1:1" value="ms_tick"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:3:1:2" value="uint32_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="2" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:1:1" value="Convert_Bool"/>
+<Binary_Exp typref="5" op="+->">
+<Id typref="6" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:1:2:1" value="BOOL"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:1:2:2" value="uint8_t"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="2" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:2:1" value="Convert_Bool"/>
+<Binary_Exp typref="5" op="+->">
+<Id typref="6" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:2:2:1" value="BOOL"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:2:2:2" value="uint16_t"/>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="2" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:3:1" value="Convert_Bool"/>
+<Binary_Exp typref="5" op="+->">
+<Id typref="6" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:3:2:1" value="BOOL"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\g_types.bxml:1:5:1:3:2:2" value="uint32_t"/>
+</Binary_Exp>
+</Exp_Comparison>
+</Define>
+<Define hash="0" name="mchcst"/>
+<Define hash="0" name="aprp"/>
+<Define hash="1976672422" name="abs">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\inputs.bxml:1:3:1:1:1" value="board_0_I1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\inputs.bxml:1:3:1:1:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\inputs.bxml:1:3:1:2:1" value="board_0_I2"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\inputs.bxml:1:3:1:2:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\inputs.bxml:1:3:1:3:1" value="board_0_I3"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\inputs.bxml:1:3:1:3:2" value="uint8_t"/>
+</Exp_Comparison>
+</Define>
+<Define hash="3730869747" name="inv">
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:1" value="board_0_I1"/>
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:1" value="board_0_I1" suffix="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:2" value="board_0_I2"/>
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:2" value="board_0_I2" suffix="1"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:3" value="board_0_I3"/>
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:3" value="board_0_I3" suffix="1"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:4:1:1:1," value="board_0_I1" suffix="1"/>
+<Id typref="0" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:4:1:1:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:4:1:2:1," value="board_0_I2" suffix="1"/>
+<Id typref="0" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:4:1:2:2" value="uint8_t"/>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:3:3,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:4:1:3:1," value="board_0_I3" suffix="1"/>
+<Id typref="0" tag="D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:4:1:3:2" value="uint8_t"/>
+</Exp_Comparison>
+</Define>
+<Define hash="0" name="ass"/>
+<Define hash="0" name="sets"/>
+<Define hash="0" name="imlprp"/>
+<Define hash="0" name="imprp"/>
+<Define hash="0" name="imext"/>
+<Proof_Obligation goalHash="2748603447">
+<Tag>Operation_read_inputs</Tag>
+<Definition name="B definitions"/>
+<Definition name="ctx"/>
+<Definition name="mchcst"/>
+<Definition name="aprp"/>
+<Definition name="imlprp"/>
+<Definition name="imprp"/>
+<Definition name="imext"/>
+<Definition name="seext"/>
+<Definition name="abs"/>
+<Definition name="inv"/>
+<Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:2:1" value="0"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:2:1" value="0"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="MAX_NB_INPUTS"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="3">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:3:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="board_0_I1" suffix="1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:3:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="4">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1," value="state" suffix="1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="5">
+<Nary_Pred op="or">
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1," value="state" suffix="1"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="IO_ON"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1," value="state" suffix="1"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="IO_OFF"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Local_Hyp>
+<Local_Hyp num="6">
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:2:1" value="1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="7">
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:2:1" value="1"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="MAX_NB_INPUTS"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="8">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:3:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="board_0_I2" suffix="1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:3:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="9">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1," value="state" suffix="2"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="10">
+<Nary_Pred op="or">
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1," value="state" suffix="2"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="IO_ON"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1," value="state" suffix="2"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="IO_OFF"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Local_Hyp>
+<Local_Hyp num="11">
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:2:1" value="2"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="12">
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:2:1" value="2"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="MAX_NB_INPUTS"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="13">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:3:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="board_0_I3" suffix="1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:3:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="14">
+<Exp_Comparison op=":">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1," value="state"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="15">
+<Nary_Pred op="or">
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1," value="state"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="IO_ON"/>
+</Exp_Comparison>
+<Exp_Comparison op="=">
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1," value="state"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:4:1:2:1:2:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="IO_OFF"/>
+</Exp_Comparison>
+</Nary_Pred>
+</Local_Hyp>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:2:1" value="0"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Goal>
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:2:1" value="0"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:1:1:1" value="MAX_NB_INPUTS"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:2:1" value="1"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Goal>
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:2:1" value="1"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:2:1:1" value="MAX_NB_INPUTS"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op=":">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:2:1" value="2"/>
+<Id typref="0" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:1:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="uint8_t"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+<Simple_Goal>
+<Tag>Precondition predicate</Tag>
+<Ref_Hyp num="1"/>
+<Ref_Hyp num="2"/>
+<Ref_Hyp num="3"/>
+<Ref_Hyp num="4"/>
+<Ref_Hyp num="5"/>
+<Ref_Hyp num="6"/>
+<Ref_Hyp num="7"/>
+<Ref_Hyp num="8"/>
+<Ref_Hyp num="9"/>
+<Ref_Hyp num="10"/>
+<Goal>
+<Exp_Comparison op="&lt;i">
+<Integer_Literal typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:2:1" value="2"/>
+<Id typref="1" tag="D:/CSSP_for_education_20230522/CSSP/CSSP_WORKSPACE/supervisor/bdp\lchip_interface.bxml:1:5:2:3:1:2:2,D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\inputs_i.bxml:1:6:1:1:1:3:1:1" value="MAX_NB_INPUTS"/>
+</Exp_Comparison>
+</Goal>
+<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<TypeInfos>
+<Type id="0">
+<Unary_Exp op="POW">
+<Id value="INTEGER"/>
+</Unary_Exp>
+</Type>
+<Type id="1">
+<Id value="INTEGER"/>
+</Type>
+<Type id="2">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="3">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Type>
+<Type id="4">
+<Id value="BOOL"/>
+</Type>
+<Type id="5">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="BOOL"/>
+<Id value="INTEGER"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id="6">
+<Unary_Exp op="POW">
+<Id value="BOOL"/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+</Proof_Obligations>

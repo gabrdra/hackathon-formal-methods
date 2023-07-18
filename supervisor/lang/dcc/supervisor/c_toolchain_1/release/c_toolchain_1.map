@@ -1,0 +1,620 @@
+
+Microchip PIC32 Memory-Usage Report
+
+kseg0 Program-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+      Total kseg0_program_mem used  :           0           0  <1% of 0x1000
+
+kseg1 Boot-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg1_boot_mem used  :           0           0  <1% of 0x490
+        --------------------------------------------------------------------------
+         Total Program Memory used  :           0           0  <1% of 0x1490
+        --------------------------------------------------------------------------
+
+
+kseg1 Data-Memory Usage
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+         Total kseg1_data_mem used  :           0           0  <1% of 0x1000
+        --------------------------------------------------------------------------
+            Total Data Memory used  :           0           0  <1% of 0x1000
+        --------------------------------------------------------------------------
+
+
+Dynamic Data-Memory Reservation
+section                    address  length [bytes]      (dec)  Description
+-------                 ----------  -------------------------  -----------
+heap                    0xa0000008              0           0  Reserved for heap 
+stack                   0xa0000020          0xfd8        4056  Reserved for stack 
+
+        --------------------------------------------------------------------------
+
+Discarded input sections
+
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_info    0x00000000      0x88a D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_abbrev  0x00000000       0xa9 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_aranges
+                0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_line    0x00000000      0x1c8 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_info    0x00000000      0x111 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_abbrev  0x00000000       0x2a D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_aranges
+                0x00000000       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_ranges  0x00000000       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_line    0x00000000       0xb8 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_frame   0x00000000       0x2c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_info    0x00000000      0x434 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_abbrev  0x00000000       0x75 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_aranges
+                0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_line    0x00000000      0x13a D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_info    0x00000000      0x1f1 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_abbrev  0x00000000       0x44 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_aranges
+                0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_line    0x00000000       0xcb D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_info    0x00000000      0x38a D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_abbrev  0x00000000       0x83 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_aranges
+                0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_line    0x00000000      0x148 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_info    0x00000000      0x1af D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_abbrev  0x00000000       0x37 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_aranges
+                0x00000000       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_ranges  0x00000000       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_line    0x00000000       0xaf D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_frame   0x00000000       0x30 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_info    0x00000000      0x461 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_abbrev  0x00000000       0xeb D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_aranges
+                0x00000000       0x40 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_ranges  0x00000000       0x30 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_line    0x00000000      0x169 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_frame   0x00000000       0xa4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_info    0x00000000      0x5cd D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_abbrev  0x00000000      0x135 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_aranges
+                0x00000000       0x50 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_ranges  0x00000000       0x40 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_line    0x00000000      0x1bc D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_frame   0x00000000       0xe8 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_info    0x00000000      0x1eb D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_abbrev  0x00000000       0x6b D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_aranges
+                0x00000000       0x28 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_ranges  0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_line    0x00000000      0x13c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_frame   0x00000000       0x4c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_info    0x00000000      0x42b D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_abbrev  0x00000000       0xca D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_aranges
+                0x00000000       0x30 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_ranges  0x00000000       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_line    0x00000000      0x165 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_frame   0x00000000       0x6c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_info    0x00000000      0x1c5 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_abbrev  0x00000000       0x37 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_aranges
+                0x00000000       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_ranges  0x00000000       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_line    0x00000000       0xb9 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_frame   0x00000000       0x2c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .reginfo       0x00000000       0x18 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_info    0x00000000      0x1b1 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_abbrev  0x00000000       0x37 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_aranges
+                0x00000000       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_ranges  0x00000000       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_line    0x00000000       0xaf D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .comment       0x00000000       0x3c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+ .debug_frame   0x00000000       0x2c D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+kseg1_boot_mem   0x9d001970         0x00000490
+kseg0_program_mem 0x9d000000         0x00001000         xr
+kseg1_data_mem   0xa0000000         0x00001000         w !x
+kseg0_application_program_mem 0x9d019444         0x00064bbc         xr
+kseg1_application_data_mem 0xa00083c4         0x00017c3c         w !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+LOAD D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+                0x00000001                __MPLAB_BUILD = 0x1
+                0x00000000                _min_heap_size = 0x0
+
+/DISCARD/
+ *(.debug_info)
+ *(.debug_abbrev)
+ *(.debug_aranges)
+ *(.debug_line)
+ *(.debug_frame)
+ *(.debug_ranges)
+ *(.comment)
+ *(.reginfo)
+
+.dinit          0x9d019444       0x10
+                0x9d019444                _reset = .
+ *(.dinit)
+ .dinit         0x9d019444       0x10 data_init
+
+.R_U_S_CST__USER_STRUCT_SAFETY_VARIABLES_SIZE_MINUS_1
+                0x9d011f28        0x4
+ *(.ru_s_cst__user_struct_safety_variables_size_minus_1)
+ .ru_s_cst__user_struct_safety_variables_size_minus_1
+                0x9d011f28        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+                0x9d011f28                struct_safety_variables_size_minus_1
+
+.R_U_S_CST__MODULE_SECU_IDS
+                0x9d011f2c        0x4
+ *(.ru_s_cst__module_secu_ids)
+ .ru_s_cst__module_secu_ids
+                0x9d011f2c        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f2c                r2__module_secu_ids_ptr
+
+.R_U_S_CST__MODULE_NB_INPUTS
+                0x9d011f30        0x4
+ *(.ru_s_cst__module_nb_inputs)
+ .ru_s_cst__module_nb_inputs
+                0x9d011f30        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f30                r2__module_nb_inputs_ptr
+
+.R_U_S_CST__MODULE_NB_OUTPUTS
+                0x9d011f34        0x4
+ *(.ru_s_cst__module_nb_outputs)
+ .ru_s_cst__module_nb_outputs
+                0x9d011f34        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f34                r2__module_nb_outputs_ptr
+
+.R_U_S_CST__INPUT_MODULE_IDS
+                0x9d011f38        0x4
+ *(.ru_s_cst__input_module_ids)
+ .ru_s_cst__input_module_ids
+                0x9d011f38        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f38                r2__input_module_ids_ptr
+
+.R_U_S_CST__INPUT_LOCAL_IDS
+                0x9d011f3c        0x4
+ *(.ru_s_cst__input_local_ids)
+ .ru_s_cst__input_local_ids
+                0x9d011f3c        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f3c                r2__input_local_ids_ptr
+
+.R_U_S_CST__OUTPUT_MODULE_IDS
+                0x9d011f40        0x4
+ *(.ru_s_cst__output_module_ids)
+ .ru_s_cst__output_module_ids
+                0x9d011f40        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f40                r2__output_module_ids_ptr
+
+.R_U_S_CST__OUTPUT_LOCAL_IDS
+                0x9d011f44        0x4
+ *(.ru_s_cst__output_local_ids)
+ .ru_s_cst__output_local_ids
+                0x9d011f44        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f44                r2__output_local_ids_ptr
+
+.R_U_S_CST__NB_MODULES
+                0x9d011f48        0x4
+ *(.ru_s_cst__NB_MODULES)
+ .ru_s_cst__NB_MODULES
+                0x9d011f48        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f48                r2__NB_MODULES_ptr
+
+.R_U_S_CST__NB_INPUTS
+                0x9d011f4c        0x4
+ *(.ru_s_cst__NB_INPUTS)
+ .ru_s_cst__NB_INPUTS
+                0x9d011f4c        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f4c                r2__NB_INPUTS_ptr
+
+.R_U_S_CST__NB_OUTPUTS
+                0x9d011f50        0x4
+ *(.ru_s_cst__NB_OUTPUTS)
+ .ru_s_cst__NB_OUTPUTS
+                0x9d011f50        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f50                r2__NB_OUTPUTS_ptr
+
+.R2_U_PTR__user_component__initialisation
+                0x9d011f78        0x4
+ *(.r2_u_ptr__user_component__initialisation_ptr)
+ .r2_u_ptr__user_component__initialisation_ptr
+                0x9d011f78        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f78                r2__user_component__initialisation_ptr
+
+.R2_U_PTR__user_app
+                0x9d011f7c        0x4
+ *(.r2_u_ptr__user_app_ptr)
+ .r2_u_ptr__user_app_ptr
+                0x9d011f7c        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f7c                r2__user_app_ptr
+
+.R2_U_PTR__user_consistency_error_detection_test
+                0x9d011f80        0x4
+ *(.r2_u_ptr__user_consistency_error_detection_test_ptr)
+ .r2_u_ptr__user_consistency_error_detection_test_ptr
+                0x9d011f80        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f80                r2__user_consistency_error_detection_test_ptr
+
+.R2_U_PTR__user_configuration__initialisation
+                0x9d011f6c        0x4
+ *(.r2_u_ptr__user_configuration__initialisation_ptr)
+ .r2_u_ptr__user_configuration__initialisation_ptr
+                0x9d011f6c        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f6c                r2__user_configuration__initialisation_ptr
+
+.R2_U_PTR__user_safety_variables__initialisation
+                0x9d011f70        0x4
+ *(.r2_u_ptr__user_safety_variables__initialisation_ptr)
+ .r2_u_ptr__user_safety_variables__initialisation_ptr
+                0x9d011f70        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f70                r2__user_safety_variables__initialisation_ptr
+
+.R2_U_PTR__user_safety_variables_array
+                0x9d011f74        0x4
+ *(.r2_u_ptr__user_safety_variables_array_ptr)
+ .r2_u_ptr__user_safety_variables_array_ptr
+                0x9d011f74        0x4 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+                0x9d011f74                r2__user_safety_variables_array_ptr
+
+.NR_S_CST       0x9d019454        0x0
+ *(.nr_s_cst)
+ *(.nr_s_cst.*)
+                0x9d019454                . = ALIGN (0x4)
+
+.NR_NS_CST      0x9d019454        0x0
+ *(.nr_ns_cst)
+ *(.nr_ns_cst.*)
+                0x9d019454                . = ALIGN (0x4)
+
+.NR_S_FN        0x9d019454       0x20
+ *(.nr_s_fn)
+ .nr_s_fn       0x9d019454       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+                0x9d019454                safety_variables__initialisation
+ *(.nr_s_fn.*)
+                0x9d019474                . = ALIGN (0x4)
+
+.NR_NS_FN       0x9d019474        0x0
+ *(.nr_ns_fn)
+ *(.nr_ns_fn.*)
+                0x9d019474                . = ALIGN (0x4)
+                0x9d019474                _end_section = .
+
+.NR_S_VAR       0xa00083c4        0x0
+ *(.nr_s_var)
+ *(.nr_s_var.*)
+                0xa00083c4                . = ALIGN (0x4)
+
+.NR_NS_VAR      0xa00083c4        0x0
+ *(.nr_ns_var)
+ *(.nr_ns_var.*)
+                0xa00083c4                . = ALIGN (0x4)
+
+.R_CST          0x9d019474       0x2c
+                0x9d019478                . = ALIGN (0x8)
+ *fill*         0x9d019474        0x4 
+ *(.r_cst)
+ .r_cst         0x9d019478       0x28 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+                0x9d019478                global_constants
+ *(.r_cst.*)
+                0x9d0194a0                . = ALIGN (0x8)
+
+.R2_CST         0x9d0194a0        0x0
+ *(.r2_cst)
+ *(.r2_cst.*)
+                0x9d0194a0                . = ALIGN (0x8)
+
+.R2_FN          0x9d0194a0      0x948
+ *(.r2_fn)
+ .r2_fn         0x9d0194a0       0x38 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+                0x9d0194a0                g_types__initialisation
+ .r2_fn         0x9d0194d8      0x184 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+                0x9d0194d8                inputs__initialisation
+                0x9d01953c                read_inputs
+                0x9d0195b8                get_board_0_I1
+                0x9d0195ec                get_board_0_I2
+                0x9d019624                get_board_0_I3
+ .r2_fn         0x9d01965c      0x5cc D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+                0x9d01965c                logic__initialisation
+                0x9d019734                user_logic
+                0x9d019bb8                get_board_0_O1
+                0x9d019bf0                get_board_0_O2
+ .r2_fn         0x9d019c28       0xa8 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+                0x9d019c28                outputs__initialisation
+                0x9d019c48                write_outputs
+ .r2_fn         0x9d019cd0       0xd8 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+                0x9d019cd0                user_component__initialisation
+                0x9d019d24                user_app
+                0x9d019d70                user_consistency_error_detection_test
+ .r2_fn         0x9d019da8       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+                0x9d019da8                user_configuration__initialisation
+ .r2_fn         0x9d019dc8       0x20 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+                0x9d019dc8                user_ctx__initialisation
+ *(.r2_fn.*)
+                0x9d019de8                . = ALIGN (0x8)
+
+.R2_CHK_VAR     0xa00083c4       0x24
+ *(.r2_chk_var)
+ .r2_chk_var    0xa00083c4       0x24 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+                0xa00083c4                safety_variables
+ *(.r2_chk_var.*)
+                0xa00083e8                . = ALIGN (0x8)
+
+.R2_NCHK_VAR    0xa00083e8        0x0
+ *(.r2_nchk_var)
+ .r2_nchk_var   0xa00083e8        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+                0xa00083e8                no_checked_variables
+ *(.r2_nchk_var.*)
+                0xa00083e8                . = ALIGN (0x8)
+
+.R1_CST         0x9d019de8        0x0
+ *(.r1_cst)
+ *(.r1_cst.*)
+                0x9d019de8                . = ALIGN (0x8)
+
+.R1_FN          0x9d019de8    0x64218
+                0x9d07e000                _end_r1_fn = (ORIGIN (kseg0_application_program_mem) + 0x64bbc)
+                [0x9d07e000]                _end_r1_fn = (_end_r1_fn - 0x0)
+                0x9d07e000                . = _end_r1_fn
+ *fill*         0x9d019de8    0x64218 
+
+.R1_CHK_VAR     0xa00083e8       0x28
+                0xa000840c                . = (. + SIZEOF (.R2_CHK_VAR))
+ *fill*         0xa00083e8       0x24 
+                0xa0008410                . = ALIGN (0x8)
+ *fill*         0xa000840c        0x4 
+
+.R1_NCHK_VAR    0xa0008410        0x0
+                0xa0008410                . = (. + SIZEOF (.R2_NCHK_VAR))
+                0xa0008410                . = ALIGN (0x8)
+
+.FREE_FLASH_SPACE
+                0x9d07e000        0x0
+                0x9d07e000                _end_flash_space = (ORIGIN (kseg0_application_program_mem) + 0x64bbc)
+                0x9d07e000                . = _end_flash_space
+                0x9d07e000                . = ALIGN (0x8)
+
+.FREE_RAM_SPACE
+                0xa0008410    0x17bf0
+                0xa0020000                _end_ram_space = (ORIGIN (kseg1_application_data_mem) + 0x17c3c)
+                0xa0020000                . = _end_ram_space
+ *fill*         0xa0008410    0x17bf0 
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+START GROUP
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libc.a
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libsupc++.a
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libpic32.a
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib\libm.a
+END GROUP
+LOAD d:/cssp_for_education_20230522/cssp/atelier_b_cssp_4.6.0-rc7/dcc_package_win/tools_win/c2hex/pic32-tools/bin/bin/../../lib/gcc/pic32mx/4.8.3\libgcc.a
+OUTPUT(D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\release/c_toolchain_1.elf elf32-tradlittlemips)
+LOAD stack
+LOAD data_init
+
+.debug_str      0x00000000        0x0
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .debug_str     0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.gnu.attributes
+                0x00000000       0x10
+ .gnu.attributes
+                0x00000000       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+ .gnu.attributes
+                0x00000010       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+ .gnu.attributes
+                0x00000020       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+ .gnu.attributes
+                0x00000030       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+ .gnu.attributes
+                0x00000040       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+ .gnu.attributes
+                0x00000050       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+ .gnu.attributes
+                0x00000060       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+ .gnu.attributes
+                0x00000070       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+ .gnu.attributes
+                0x00000080       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+ .gnu.attributes
+                0x00000090       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+ .gnu.attributes
+                0x000000a0       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+ .gnu.attributes
+                0x000000b0       0x10 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.stack          0xa0000020       0x10
+ .stack         0xa0000020       0x10 stack
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.mdebug.abi32   0x00000000        0x0
+ .mdebug.abi32  0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+
+.bss            0x00000000        0x0
+ .bss           0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+
+.data           0x00000000        0x0
+ .data          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_ctx_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_configuration_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\user_component_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\outputs_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\logic_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\inputs_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\g_types_i.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_safety_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_no_checked_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\replica_2\c4b_constants.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\non_replicated\safety_variables.o
+
+.text           0x00000000        0x0
+ .text          0x00000000        0x0 D:\CSSP_for_education_20230522\CSSP\CSSP_WORKSPACE\supervisor\bdp\..\\lang\dcc\supervisor\c_toolchain_1\build\kernel_app\link_to_kernel.o
